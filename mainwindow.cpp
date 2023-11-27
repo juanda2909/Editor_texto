@@ -97,7 +97,7 @@ void MainWindow::on_actionAbrir_Archivo_triggered()
             this,
             "MainWindow - Abrir Archivo",
             "/home/juanc/Documents",
-            "Text Files (*.txt);;All Files (*.*)*");
+            "All Files (*.*)*;;PDF Files (*.pdf);;Word Files (*.doc);;Text Files (*.txt)");
         if(!fileName.isEmpty()){
             QFile file(fileName);
             if(file.open(QFile::ReadOnly)){
@@ -114,6 +114,7 @@ void MainWindow::on_actionAbrir_Archivo_triggered()
         }
     }
 }
+
 
 //Funcion que se encarga de crear un nuevo archivo
 
