@@ -206,7 +206,7 @@ Errores comunes:
 
 Conclusión:
 
-Este manual proporciona instrucciones paso a paso para utilizar el código Qt proporcionado. El código consta de una aplicación de editor de texto simple que permite
+Este manual proporciona instrucciones paso a paso para utilizar el código Qt. El código consta de una aplicación de editor de texto simple que permite
 al usuario crear, abrir, guardar y cerrar archivos de texto.
 
 
