@@ -178,8 +178,9 @@ Guardar un archivo:
 2) Haga clic en el elemento de menú "Guardar" o presione Ctrl + S.
 3) Se abrirá un cuadro de diálogo de guardado de archivos.
 4) Seleccione la ubicación donde desea guardar el archivo.
-5) Escriba el nombre del archivo.
-6) Haga clic en el botón "Guardar".
+5) Seleccione el formato con el cual desea guardar el archivo.
+6) Escriba el nombre del archivo.
+7) Haga clic en el botón "Guardar".
 
 Abrir un archivo:
 
@@ -201,6 +202,7 @@ Errores comunes:
 - Si el compilador Qt no se puede encontrar, asegúrese de haber instalado el compilador Qt correctamente.
 - Si el código no se compila, asegúrese de que el archivo editor.pro esté configurado correctamente.
 - Si el editor de texto no se abre, asegúrese de haber ejecutado el archivo ejecutable editor correctamente.
+- Pueden existir inconvenientes a la hora de abrir los archivos con el formato en pdf.
 
 Conclusión:
 
@@ -214,4 +216,4 @@ Cel:+573166170699
 Correo:judatar2@gmail.com
 Juan Camilo Velásquez Tobo
 Cel:+573136992715
-Correo:
+Correo:juancamilo.velasquez@utp.edu.co
