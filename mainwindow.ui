@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>717</width>
+    <height>405</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow [*]</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>691</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>39</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QFontComboBox" name="fontComboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>154</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>0</y>
+      <width>31</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>N</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>0</y>
+      <width>31</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>S</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>0</y>
+      <width>31</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>K</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>717</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNuevo"/>
+    <addaction name="actionAbrir_Archivo"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionGuardar_Como"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+    <addaction name="actionCopiar"/>
+    <addaction name="actionPegar"/>
+    <addaction name="actionCortar"/>
+   </widget>
+   <widget class="QMenu" name="menuColor">
+    <property name="title">
+     <string>Texto</string>
+    </property>
+    <widget class="QMenu" name="menuColor_2">
+     <property name="title">
+      <string>Color</string>
+     </property>
+     <addaction name="actionNegro_2"/>
+     <addaction name="actionAmarillo"/>
+     <addaction name="actionRojo"/>
+     <addaction name="actionAzul"/>
+     <addaction name="actionVerde"/>
+    </widget>
+    <widget class="QMenu" name="menuTipograf_a">
+     <property name="title">
+      <string>Tipografía</string>
+     </property>
+     <addaction name="actionNegrilla"/>
+     <addaction name="actionSubrayado"/>
+     <addaction name="actionCursiva"/>
+    </widget>
+    <widget class="QMenu" name="menuTama_o">
+     <property name="title">
+      <string>Tamaño</string>
+     </property>
+     <addaction name="action2"/>
+     <addaction name="action4"/>
+     <addaction name="action6"/>
+     <addaction name="action8"/>
+     <addaction name="action10"/>
+     <addaction name="action12"/>
+     <addaction name="action14"/>
+     <addaction name="action16"/>
+     <addaction name="action18"/>
+     <addaction name="action20"/>
+     <addaction name="action22"/>
+     <addaction name="action24"/>
+     <addaction name="action26"/>
+     <addaction name="action28"/>
+     <addaction name="action30"/>
+     <addaction name="action32"/>
+     <addaction name="action34"/>
+     <addaction name="action36"/>
+     <addaction name="action38"/>
+     <addaction name="action40"/>
+    </widget>
+    <addaction name="menuColor_2"/>
+    <addaction name="menuTipograf_a"/>
+    <addaction name="menuTama_o"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuColor"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNuevo"/>
+   <addaction name="actionAbrir_Archivo"/>
+   <addaction name="actionGuardar"/>
+   <addaction name="actionGuardar_Como"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopiar"/>
+   <addaction name="actionCortar"/>
+   <addaction name="actionPegar"/>
+  </widget>
+  <action name="actionNuevo">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Iconos/Nuevo.png</normaloff>:/Iconos/Nuevo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionAbrir_Archivo">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Iconos/Abrir Archivo.png</normaloff>:/Iconos/Abrir Archivo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir Archivo</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Iconos/Guardar.png</normaloff>:/Iconos/Guardar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar </string>
+   </property>
+  </action>
+  <action name="actionGuardar_Como">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Iconos/Guardar como.png</normaloff>:/Iconos/Guardar como.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar Como</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Iconos/copiar.png</normaloff>:/Iconos/copiar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+  </action>
+  <action name="actionPegar">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Iconos/pegar.png</normaloff>:/Iconos/pegar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pegar</string>
+   </property>
+  </action>
+  <action name="actionCortar">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Iconos/cortar.png</normaloff>:/Iconos/cortar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cortar</string>
+   </property>
+  </action>
+  <action name="actionNegro_2">
+   <property name="text">
+    <string>Negro</string>
+   </property>
+  </action>
+  <action name="actionAmarillo">
+   <property name="text">
+    <string>Amarillo</string>
+   </property>
+  </action>
+  <action name="actionRojo">
+   <property name="text">
+    <string>Rojo</string>
+   </property>
+  </action>
+  <action name="actionAzul">
+   <property name="text">
+    <string>Azul</string>
+   </property>
+  </action>
+  <action name="actionVerde">
+   <property name="text">
+    <string>Verde</string>
+   </property>
+  </action>
+  <action name="actionNegrilla">
+   <property name="text">
+    <string>Negrilla</string>
+   </property>
+  </action>
+  <action name="actionSubrayado">
+   <property name="text">
+    <string>Subrayado</string>
+   </property>
+  </action>
+  <action name="actionCursiva">
+   <property name="text">
+    <string>Cursiva</string>
+   </property>
+  </action>
+  <action name="action2">
+   <property name="text">
+    <string>2</string>
+   </property>
+  </action>
+  <action name="action4">
+   <property name="text">
+    <string>4</string>
+   </property>
+  </action>
+  <action name="action6">
+   <property name="text">
+    <string>6</string>
+   </property>
+  </action>
+  <action name="action8">
+   <property name="text">
+    <string>8</string>
+   </property>
+  </action>
+  <action name="action10">
+   <property name="text">
+    <string>10</string>
+   </property>
+  </action>
+  <action name="action12">
+   <property name="text">
+    <string>12</string>
+   </property>
+  </action>
+  <action name="action14">
+   <property name="text">
+    <string>14</string>
+   </property>
+  </action>
+  <action name="action16">
+   <property name="text">
+    <string>16</string>
+   </property>
+  </action>
+  <action name="action18">
+   <property name="text">
+    <string>18</string>
+   </property>
+  </action>
+  <action name="action20">
+   <property name="text">
+    <string>20</string>
+   </property>
+  </action>
+  <action name="action22">
+   <property name="text">
+    <string>22</string>
+   </property>
+  </action>
+  <action name="action24">
+   <property name="text">
+    <string>24</string>
+   </property>
+  </action>
+  <action name="action26">
+   <property name="text">
+    <string>26</string>
+   </property>
+  </action>
+  <action name="action28">
+   <property name="text">
+    <string>28</string>
+   </property>
+  </action>
+  <action name="action30">
+   <property name="text">
+    <string>30</string>
+   </property>
+  </action>
+  <action name="action32">
+   <property name="text">
+    <string>32</string>
+   </property>
+  </action>
+  <action name="action34">
+   <property name="text">
+    <string>34</string>
+   </property>
+  </action>
+  <action name="action36">
+   <property name="text">
+    <string>36</string>
+   </property>
+  </action>
+  <action name="action38">
+   <property name="text">
+    <string>38</string>
+   </property>
+  </action>
+  <action name="action40">
+   <property name="text">
+    <string>40</string>
+   </property>
+  </action>
+  <action name="action42">
+   <property name="text">
+    <string>42</string>
+   </property>
+  </action>
+  <action name="action44">
+   <property name="text">
+    <string>44</string>
+   </property>
+  </action>
+  <action name="actionTimes_New_Roman">
+   <property name="text">
+    <string>Times New Roman</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>plainTextEdit</tabstop>
+  <tabstop>spinBox</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Iconos.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionSalir</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>217</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCopiar</sender>
+   <signal>triggered()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>copy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>217</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPegar</sender>
+   <signal>triggered()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>217</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCortar</sender>
+   <signal>triggered()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>cut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>217</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

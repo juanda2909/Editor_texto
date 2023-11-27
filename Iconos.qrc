@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Iconos/Abrir Archivo.png</file>
+        <file>Iconos/Guardar como.png</file>
+        <file>Iconos/Guardar.png</file>
+        <file>Iconos/Nuevo.png</file>
+        <file>Iconos/ADELANTE.png</file>
+        <file>Iconos/Atras.png</file>
+        <file>Iconos/cortar.png</file>
+        <file>Iconos/pegar.png</file>
+        <file>Iconos/copiar.png</file>
+    </qresource>
+</RCC>
