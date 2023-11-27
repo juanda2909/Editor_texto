@@ -81,8 +81,9 @@ El destructor de la clase MainWindow elimina el objeto miembro ui.
 
 Bloque 3: Función on_actionGuardar_Como_triggered():
 
-La función on_actionGuardar_Como_triggered() abre un cuadro de diálogo de guardado de archivos y guarda el contenido del widget plainTextEdit en el archivo 
-seleccionado.
+Maneja la acción "Guardar como". Le pide al usuario que seleccione una ubicación de archivo usando la clase QFileDialog y guarda el contenido actual del editor de texto plano en el archivo seleccionado. La función savefile() es responsable de guardar el contenido del archivo. Abre el archivo seleccionado en modo de escritura, escribe el contenido de texto plano en el archivo y devuelve true si se realiza correctamente. De lo contrario, muestra un mensaje de error y devuelve false.
+
+La función on_actionGuardar_triggered() maneja la acción "Guardar". Si ya se ha guardado un archivo usando "Guardar como", llama directamente a la función savefile() para guardar el contenido actual en ese archivo. De lo contrario, llama a la función on_actionGuardar_Como_triggered() para solicitar al usuario una ubicación de archivo y guardar el contenido.
 
 Bloque 4: Función savefile():
 
@@ -100,16 +101,7 @@ por el objeto miembro curlFile.
 
 Bloque 7: Función on_actionAbrir_Archivo_triggered():
 
-La función on_actionAbrir_Archivo_triggered() abre un cuadro de diálogo de apertura de archivos y carga el archivo seleccionado en el widget plainTextEdit.
-
-El código primero llama a la función maybeSave() para verificar si el contenido del widget plainTextEdit ha sido modificado desde la última vez que se guardó. Si es 
-así, le pregunta al usuario si desea guardarlos. Si el usuario elige guardar, llama a la función savefile().
-
-Si el contenido del widget plainTextEdit no ha sido modificado, la función abre un cuadro de diálogo de apertura de archivos. El cuadro de diálogo muestra una lista 
-de archivos en el directorio especificado por la variable /home/juanc/Documents. El usuario puede seleccionar un archivo para abrir.
-
-Si el usuario selecciona un archivo, la función abre el archivo y carga su contenido en el widget plainTextEdit. También establece la variable curlFile en el nombre 
-del archivo abierto.
+La función on_actionAbrir_Archivo_triggered() maneja la acción "Abrir archivo". Primero verifica si el contenido actual está modificado y le pide al usuario que lo guarde usando la función maybeSave(). Si el usuario elige guardar o el contenido no está modificado, le pide al usuario que seleccione un archivo usando la clase QFileDialog. Si se selecciona un archivo válido, abre el archivo en modo de solo lectura, lee su contenido y establece el texto del editor de texto plano en el contenido leído. También actualiza la variable curlFile para almacenar la ruta del archivo abierto.La función on_actionAbrir_Archivo_triggered() maneja la acción "Abrir archivo". Primero verifica si el contenido actual está modificado y le pide al usuario que lo guarde usando la función maybeSave(). Si el usuario elige guardar o el contenido no está modificado, le pide al usuario que seleccione un archivo usando la clase QFileDialog. Si se selecciona un archivo válido, abre el archivo en modo de solo lectura, lee su contenido y establece el texto del editor de texto plano en el contenido leído. También actualiza la variable curlFile para almacenar la ruta del archivo abierto.
 
 Bloque 8: Función on_actionNuevo_triggered():
 
