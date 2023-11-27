@@ -31,10 +31,10 @@ bool MainWindow::on_actionGuardar_Como_triggered()
 {
     QString fileName = QFileDialog::getSaveFileName(
         this,
-        "MainWindow - Guardar Como",
-        "/home/juanc/Documents",
-        "Text Files (*.txt);;All Files (*.*)*");
-
+        "Guardar Como",
+        QString(),
+ "Archivos de texto (*.txt);;Archivos PDF (*.pdf);;Archivos de Word (*.doc)");
+ 
     if(!fileName.isEmpty()){
         curlFile = fileName;
         return savefile();
