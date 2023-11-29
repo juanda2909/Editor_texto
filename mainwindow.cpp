@@ -1,12 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include <QMessageBox>
-#include <QFileDialog>
-#include <QDebug>
-#include <QSettings>
-#include <QMainWindow>
-#include <QFontComboBox>
-#include <QPlainTextEdit>
+
 
 //Abre la ventana y configura los widgets
 
