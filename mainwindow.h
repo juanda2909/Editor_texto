@@ -1,5 +1,12 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+#include <QMessageBox>
+#include <QFileDialog>
+#include <QDebug>
+#include <QSettings>
+#include <QMainWindow>
+#include <QFontComboBox>
+#include <QPlainTextEdit>
 
 #include <QMainWindow>
 
